@@ -22,6 +22,7 @@ public class Car {
         this.color = color;
     }
 
+
     public Car() {
 
     }
@@ -52,5 +53,15 @@ public class Car {
 
     public Long getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", model='" + model + '\'' +
+                ", serial='" + serial + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
